@@ -18,6 +18,13 @@
 				vm.teamsInPhaseThree = [
 					{name: 'Team3', 'members': [{'name': 'member3'}]}
 				];
+
+				vm.viewTeamDetail = function(event, data) {
+					//load team detail
+					$log.info('loading team detail ', data);
+				};
+
+				$scope.$on('dashboard-view-team', vm.viewTeamDetail);
 			}]
 		}
 	}
