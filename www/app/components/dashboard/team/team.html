@@ -1,0 +1,10 @@
+<md-card class="team">
+    <md-card-content style="text-align: center">
+        <h2 class="md-title team-name" ng-bind="competingTeam.name"></h2>
+
+        <p>
+            <span>Members</span>
+            <strong ng-repeat="member in competingTeam.members">{{member.name}}<span ng-if="$index !== competingTeam.members.length - 1">, </span></strong>
+        </p>
+    </md-card-content>
+</md-card>
